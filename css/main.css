@@ -145,15 +145,15 @@ textarea {
   display: none;
 }
 ::-webkit-scrollbar-thumb {
-  background: #FF851B;
+  background: #213830;
   border: none;
   border-radius: 16px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #FFC269;
+  background: #5B8476;
 }
 ::-webkit-scrollbar-thumb:active {
-  background: #FFC269;
+  background: #5B8476;
 }
 ::-webkit-scrollbar-track {
   background: #FFF;
@@ -176,13 +176,25 @@ textarea {
 
 * {
     box-sizing: border-box;
-    /*font-family: "Galano", sans-serif ;
-    font-weight: normal;*/
+    font-family: "Champagne&Limousines", sans-serif ;
+    font-weight: normal;
+}
+
+body {
+    background: url(../img/bg.jpg)no-repeat center center fixed;
+    background-size: cover;
+    color: #1a322e;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
 }
 
 section {
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .col-center {
@@ -193,6 +205,19 @@ section {
 
 .img-responsive {
     width: 100%;
+}
+
+.menu-icon {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    width: 4%;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.menu-icon:hover {
+    box-shadow: 0 0 5px 2px #F7EEE5;
 }
 
 /**paddings**/
@@ -226,6 +251,14 @@ section {
     margin-bottom: 50px;
 }
 
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+.mb-150 {
+    margin-bottom: 150px;
+}
+
 .mt-20 {
     margin-top: 20px;
 }
@@ -238,9 +271,56 @@ section {
     margin-top: 50px;
 }
 
+/**Sections**/
 
+#home {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: flex-end;
+    background: -webkit-linear-gradient(bottom, rgba(247,238,229,1) 5%, rgba(247,238,229,0.95) 10%, rgba(247,238,229,0.6) 50%, rgba(247,238,229,0.45) 100%);
+    background: -o-linear-gradient(bottom, rgba(247,238,229,1) 5%, rgba(247,238,229,0.95) 10%, rgba(247,238,229,0.6) 50%, rgba(247,238,229,0.45) 100%);
+    background: linear-gradient(to top, rgba(247,238,229,1) 5%, rgba(247,238,229,0.95) 10%, rgba(247,238,229,0.6) 50%, rgba(247,238,229,0.45) 100%);
+}
 
+    #home a {
+        font-size: 1.15rem;
+        letter-spacing: 3px;
+        color: #1a322e;
+        position: relative;
+        padding: 9px 0;
+    }
 
+    #home a:after,
+    #home a:before {
+        content: "";
+        position: absolute;
+        left: 4%;
+        width: 92%;
+        height: 2px;
+        background: #1a322e;
+    }
+
+    #home a:after {
+        top: 0;
+    }
+
+    #home a:before {
+        bottom: 0;
+    }
+
+#galeria {
+    min-height: 100vh;
+    background: #F7EEE5;
+    position: relative;
+}
+
+    #galeria h2 {
+        width: 100%;
+        text-align: center;
+        letter-spacing: 3px;
+    }
 
 
 
