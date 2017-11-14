@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cantabria</title>
+	<style type="text/css">
+		* {
+			box-shadow: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			background: -webkit-linear-gradient(to bottom, #e8e8e8 10%, #FFFFFF 40%, #FFFFFF 60%, #e8e8e8 100%);
+			background: -o-linear-gradient(to bottom, #e8e8e8 10%, #FFFFFF 40%, #FFFFFF 60%, #e8e8e8 100%);
+			background: linear-gradient(to bottom, #e8e8e8 10%, #FFFFFF 40%, #FFFFFF 60%, #e8e8e8 100%);
+		}
+		#main {
+			width: 50%;
+			margin: 0 auto;
+		}
+
+		#main img {
+			width: 100%;
+		}
+
+		@media screen and (max-width: 900px) {
+			#main {
+				width: 80%;
+			}
+		}
+
+		@media screen and (max-width: 600px) {
+			#main {
+				width: 100%;
+			}
+		}
+
+		@media screen and (max-width: 450px) and (min-height: 580px) {
+			#main {
+				height: 100vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<img src="proximamente.svg">
+	</div>
+</body>
+</html>
