@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/swiper.min.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
@@ -24,25 +25,159 @@
         <a href="" class="menu-icon"><img src="img/menu.png" alt="" class="img-responsive"></a>
 
         <section id="home">
-            
-            <div class="col-md-2 col-sm-4 col-xs-5 mb-150">
-                <img src="img/logo.png" alt="Cantabria" class="img-responsive">
-            </div>
 
-            <a href="!#" class="mb-80">CONTÁCTANOS</a>
+            <div class="wrap">
+
+                <div class="col-md-2 col-sm-4 col-xs-5 mb-150" id="logo">
+                   <img src="img/logo.png" alt="Cantabria" class="img-responsive">
+               </div>
+
+               <a href="!#" class="mb-80 animated fadeInUp">CONTÁCTANOS</a>
+           </div>
 
         </section>
 
         <section id="galeria">
-           <h2>GALERÍA</h2> 
 
+           <div class="wrap">
+
+               <h2 class="animated ">GALERÍA</h2>
+
+               <div class="swiper-container" id="swiper-gallery">
+                   
+                    <div class="swiper-wrapper">
+
+                        <!-- Slides -->
+                        <div class="swiper-slide swiper-slide-gallery">
+                            <img src="img/gallery/6.png" alt="" class="img-responsive">
+                        </div>
+                        <div class="swiper-slide swiper-slide-gallery">
+                            <img src="img/gallery/6.png" alt="" class="img-responsive">
+                        </div>
+                        <div class="swiper-slide swiper-slide-gallery">
+                            <img src="img/gallery/6.png" alt="" class="img-responsive">
+                        </div>
+
+                    </div>
+
+                    <!-- If we need navigation buttons -->
+                    <!-- <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div> -->
+
+               </div>
+
+               <div id="gallery-prev"><img src="img/arrow-prev.png" class="img-responsive" alt=""></div>
+               <div id="gallery-next"><img src="img/arrow-next.png" class="img-responsive" alt=""></div>
+
+           </div>
 
         </section>
         
+        <section id="comida">
+            
+            <div class="wrap">
+                
+                <div class="row">
+                    
+                    <div class="col-md-5 animated " id="comida-text">
+                        
+                        <div class="col-md-11">
+                            <img src="img/redefinimos-concepto.png" alt="" class="img-responsive">
+                        </div>
+
+                        <a href="#!">MENÚ</a>
+
+                    </div>
+                    <div class="col-md-5 animated ">
+                        
+                        <img src="img/plato.png" alt="" class="img-responsive">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="servicios">
+            
+            <div class="wrap">
+
+                <h1 class="cursive fs45">Servicios</h1>
+
+            </div>
+
+            <div class="swiper-container" id="swiper-servicios">
+                   
+                    <div class="swiper-wrapper">
+
+                        <!-- Slides -->
+                        <div class="swiper-slide swiper-slide-services">
+                            <img src="img/services/carpas.png" alt="" class="img-responsive">
+                            <p>CARPAS</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-services">
+                            <img src="img/services/audiovisuales.png" alt="" class="img-responsive">
+                            <p>AUDIOVISUALES</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-services">
+                            <img src="img/services/montajes.png" alt="" class="img-responsive">
+                            <p>MONTAJES</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-services">
+                            <img src="img/services/maestro.png" alt="" class="img-responsive">
+                            <p>MAESTRO DE CEREMONIA</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-services">
+                            <img src="img/services/sonido.png" alt="" class="img-responsive">
+                            <p>SONIDO</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-services">
+                            <img src="img/services/decoracion.png" alt="" class="img-responsive">
+                            <p>DECORACIÓN</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-services">
+                            <img src="img/services/carpas.png" alt="" class="img-responsive">
+                            <p>CARPAS</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-services">
+                            <img src="img/services/audiovisuales.png" alt="" class="img-responsive">
+                            <p>AUDIOVISUALES</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-services">
+                            <img src="img/services/montajes.png" alt="" class="img-responsive">
+                            <p>MONTAJES</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-services">
+                            <img src="img/services/maestro.png" alt="" class="img-responsive">
+                            <p>MAESTRO DE CEREMONIA</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-services">
+                            <img src="img/services/sonido.png" alt="" class="img-responsive">
+                            <p>SONIDO</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-services">
+                            <img src="img/services/decoracion.png" alt="" class="img-responsive">
+                            <p>DECORACIÓN</p>
+                        </div>
+
+                    </div>
+
+                    <!-- If we need navigation buttons -->
+                    <!-- <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div> -->
+
+               </div>
+
+        </section>
         
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/vendor/swiper.js"></script>
+        <!-- <script src="js/vendor/swiper.esm.js"></script> -->
+        <!-- <script src="js/vendor/swiper.esm.bundle.js"></script> -->
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 

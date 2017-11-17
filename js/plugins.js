@@ -21,4 +21,35 @@
     }
 }());
 
+
+$(document).ready(function () {
+    var swiper = new Swiper('#swiper-gallery', {
+        direction: 'horizontal',
+        // effect: 'fade',
+        loop: true,
+        autoplay: {
+            delay: 5000,
+          },
+        //Navigation arrows
+        navigation: {
+          nextEl: '#gallery-next',
+          prevEl: '#gallery-prev',
+        }
+    });
+
+    var swiper = new Swiper('#swiper-servicios', {
+        direction: 'horizontal',
+        slidesPerView: 5,
+        spaceBetween: 80,
+        loop: true,
+        autoplay: {
+            delay: 5000,
+          },
+        //Navigation arrows
+        // navigation: {
+        //   nextEl: '#gallery-next',
+        //   prevEl: '#gallery-prev',
+        // }
+    });
+});
 // Place any jQuery/helper plugins in here.
