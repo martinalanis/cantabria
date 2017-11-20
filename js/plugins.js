@@ -23,7 +23,7 @@
 
 
 $(document).ready(function () {
-    var swiper = new Swiper('#swiper-gallery', {
+    var swiperG = new Swiper('#swiper-gallery', {
         direction: 'horizontal',
         // effect: 'fade',
         loop: true,
@@ -37,19 +37,37 @@ $(document).ready(function () {
         }
     });
 
-    var swiper = new Swiper('#swiper-servicios', {
+    var swiperS = new Swiper('#swiper-services', {
         direction: 'horizontal',
-        slidesPerView: 5,
-        spaceBetween: 80,
+        slidesPerView: 6,
+        spaceBetween: 60,
         loop: true,
         autoplay: {
             delay: 5000,
           },
         //Navigation arrows
-        // navigation: {
-        //   nextEl: '#gallery-next',
-        //   prevEl: '#gallery-prev',
-        // }
+        navigation: {
+          nextEl: '#services-next',
+          prevEl: '#services-prev',
+        }
+    });
+
+    var swiperE = new Swiper('#swiper-events', {
+        direction: 'horizontal',
+        // effect: 'fade',
+        loop: true,
+        autoplay: {
+            delay: 5000,
+          },
+        // If we need pagination
+        pagination: {
+          el: '#pagination-events',
+        },
+        //Navigation arrows
+        navigation: {
+          nextEl: '#events-next',
+          prevEl: '#events-prev',
+        }
     });
 });
 // Place any jQuery/helper plugins in here.

@@ -225,6 +225,11 @@ section {
     opacity: 0;
 }
 
+.divider {
+    height: 2px;
+    background: #002e2a;
+}
+
 .menu-icon {
     position: absolute;
     top: 2%;
@@ -304,22 +309,56 @@ section {
 
 /**Swiper**/
 
-.swiper-container {
+#swiper-gallery,
+#swiper-events {
     width: 70%;
     /*height: 300px;*/
 }
 
-.swiper-slide-gallery {
+#swiper-services {
+    width: 60%;
+    /*height: 300px;*/
+}
+
+.swiper-slide-gallery,
+.swiper-slide-events {
     background: #F7EEE5;
 }
 
 .swiper-slide-services img {
-    padding: 10px 20px 5px;
+    padding: 10px 10px 5px;
 }
 
 .swiper-slide-services p {
     text-align: center;
     color: #002e2a;
+}
+
+#pagination-events {
+    text-align: center;
+    margin-top: 20px;
+}
+
+    #pagination-events > span.swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+        margin: 0 15px;
+        background: #002e2a;
+        opacity: 0.5;
+    }
+
+    #pagination-events > span.swiper-pagination-bullet-active {
+        opacity: 1;
+    }
+
+div.content-events {
+    position: absolute;
+    top: 20%;
+    bottom: 20%;
+    width: 100%;
+    background: rgba(247,238,229,0.7);
+    text-align: center;
+    padding: 1% 2%;
 }
 
 /**Sections**/
@@ -420,20 +459,20 @@ section {
         letter-spacing: 5px;
     }
 
-    #gallery-next {
+    #gallery-next,
+    #gallery-prev {
         width: 3%;
         position: absolute;
-        right: 10%;
         top: 40%;
         cursor: pointer;
     }
 
-    #gallery-prev {
-        width: 3%;
-        position: absolute;
-        left: 10%;
-        top: 40%;
-        cursor: pointer;
+    #gallery-next {
+        right: 10%;        
+    }
+
+    #gallery-prev {      
+        left: 10%;       
     }
 
 #comida {
@@ -467,6 +506,7 @@ section {
     #comida a:hover {
         background: #002e2a;
         transform: translateY(-5px);
+        /*transform: scale3d(1.1,1.1,1.1);*/
     }
 
 #servicios {
@@ -481,7 +521,57 @@ section {
         margin-bottom: 30px;
     }
 
+    #services-next,
+    #services-prev {
+        width: 2%;
+        position: absolute;
+        bottom: 30%;
+        cursor: pointer;
+    }
 
+    #services-next {
+        right: 12%;        
+    }
+
+    #services-prev {      
+        left: 12%;       
+    }
+
+#eventos {
+    padding: 50px 0;
+    background: #F7EEE5;
+}
+
+    #events-next,
+    #events-prev {
+        width: 3%;
+        position: absolute;
+        top: 40%;
+        cursor: pointer;
+    }
+
+    #events-next {
+        right: 10%;        
+    }
+
+    #events-prev {      
+        left: 10%;       
+    }
+    
+    #eventos h1 {
+        margin-bottom: 15px;
+    }
+
+    #eventos div.info {
+        margin-top: 15px;
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+#contacto {
+    padding: 50px 0 100px;
+    background: #F7EEE5;
+}
 
 
 
