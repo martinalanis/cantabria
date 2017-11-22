@@ -12,9 +12,11 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/swiper.min.css">
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/slick-theme.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
@@ -28,11 +30,11 @@
 
             <div class="wrap">
 
-                <div class="col-md-2 col-sm-4 col-xs-5 mb-150" id="logo">
+                <div class="col-md-2 col-sm-4 col-xs-8 mb-150" id="logo">
                    <img src="img/logo.png" alt="Cantabria" class="img-responsive">
-               </div>
+                </div>
 
-               <a href="!#" class="mb-80 animated fadeInUp">CONTÁCTANOS</a>
+               <a href="!#" class="mb-80 animated" id="btn-home">CONTÁCTANOS</a>
            </div>
 
         </section>
@@ -79,7 +81,7 @@
                 
                 <div class="row">
                     
-                    <div class="col-md-5 animated " id="comida-text">
+                    <div class="col-md-5 col-xs-10 animated " id="comida-text">
                         
                         <div class="col-md-11">
                             <img src="img/redefinimos-concepto.png" alt="" class="img-responsive">
@@ -88,7 +90,7 @@
                         <a href="#!">MENÚ</a>
 
                     </div>
-                    <div class="col-md-5 animated ">
+                    <div class="col-md-5 col-xs-8 animated ">
                         
                         <img src="img/plato.png" alt="" class="img-responsive">
 
@@ -102,72 +104,69 @@
 
         <section id="servicios">
             
-            <div class="wrap">
+            <div class="wrap animated fadeInUp">
 
                 <h1 class="cursive fs45">Servicios</h1>
 
-            </div>
+                <div class="swiper-container" id="swiper-services">
 
-            <div class="swiper-container" id="swiper-services">
-                   
-                <div class="swiper-wrapper">
-
-                    <!-- Slides -->
-                    <div class="swiper-slide swiper-slide-services">
-                        <img src="img/services/carpas.png" alt="" class="img-responsive">
-                        <p>CARPAS</p>
-                    </div>
-                    <div class="swiper-slide swiper-slide-services">
-                        <img src="img/services/audiovisuales.png" alt="" class="img-responsive">
-                        <p>AUDIOVISUALES</p>
-                    </div>
-                    <div class="swiper-slide swiper-slide-services">
-                        <img src="img/services/montajes.png" alt="" class="img-responsive">
-                        <p>MONTAJES</p>
-                    </div>
-                    <div class="swiper-slide swiper-slide-services">
-                        <img src="img/services/maestro.png" alt="" class="img-responsive">
-                        <p>MAESTRO DE CEREMONIA</p>
-                    </div>
-                    <div class="swiper-slide swiper-slide-services">
-                        <img src="img/services/sonido.png" alt="" class="img-responsive">
-                        <p>SONIDO</p>
-                    </div>
-                    <div class="swiper-slide swiper-slide-services">
-                        <img src="img/services/decoracion.png" alt="" class="img-responsive">
-                        <p>DECORACIÓN</p>
-                    </div>
-                    <div class="swiper-slide swiper-slide-services">
-                        <img src="img/services/carpas.png" alt="" class="img-responsive">
-                        <p>CARPAS</p>
-                    </div>
-                    <div class="swiper-slide swiper-slide-services">
-                        <img src="img/services/audiovisuales.png" alt="" class="img-responsive">
-                        <p>AUDIOVISUALES</p>
-                    </div>
-                    <div class="swiper-slide swiper-slide-services">
-                        <img src="img/services/montajes.png" alt="" class="img-responsive">
-                        <p>MONTAJES</p>
-                    </div>
-                    <div class="swiper-slide swiper-slide-services">
-                        <img src="img/services/maestro.png" alt="" class="img-responsive">
-                        <p>MAESTRO DE CEREMONIA</p>
-                    </div>
-                    <div class="swiper-slide swiper-slide-services">
-                        <img src="img/services/sonido.png" alt="" class="img-responsive">
-                        <p>SONIDO</p>
-                    </div>
-                    <div class="swiper-slide swiper-slide-services">
-                        <img src="img/services/decoracion.png" alt="" class="img-responsive">
-                        <p>DECORACIÓN</p>
-                    </div>
+                        <!-- Slides -->
+                        <div class="swiper-slide swiper-slide-services">
+                            <img src="img/services/carpas.png" alt="" class="img-responsive">
+                            <p>CARPAS</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-services">
+                            <img src="img/services/audiovisuales.png" alt="" class="img-responsive">
+                            <p>AUDIOVISUALES</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-services">
+                            <img src="img/services/montajes.png" alt="" class="img-responsive">
+                            <p>MONTAJES</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-services">
+                            <img src="img/services/maestro.png" alt="" class="img-responsive">
+                            <p>MAESTRO DE CEREMONIA</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-services">
+                            <img src="img/services/sonido.png" alt="" class="img-responsive">
+                            <p>SONIDO</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-services">
+                            <img src="img/services/decoracion.png" alt="" class="img-responsive">
+                            <p>DECORACIÓN</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-services">
+                            <img src="img/services/carpas.png" alt="" class="img-responsive">
+                            <p>CARPAS</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-services">
+                            <img src="img/services/audiovisuales.png" alt="" class="img-responsive">
+                            <p>AUDIOVISUALES</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-services">
+                            <img src="img/services/montajes.png" alt="" class="img-responsive">
+                            <p>MONTAJES</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-services">
+                            <img src="img/services/maestro.png" alt="" class="img-responsive">
+                            <p>MAESTRO DE CEREMONIA</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-services">
+                            <img src="img/services/sonido.png" alt="" class="img-responsive">
+                            <p>SONIDO</p>
+                        </div>
+                        <div class="swiper-slide swiper-slide-services">
+                            <img src="img/services/decoracion.png" alt="" class="img-responsive">
+                            <p>DECORACIÓN</p>
+                        </div>
 
                 </div>
 
+                <div id="services-prev"><img src="img/arrow-prev.png" class="img-responsive" alt=""></div>
+                <div id="services-next"><img src="img/arrow-next.png" class="img-responsive" alt=""></div>
+            
             </div>
 
-            <div id="services-prev"><img src="img/arrow-prev.png" class="img-responsive" alt=""></div>
-            <div id="services-next"><img src="img/arrow-next.png" class="img-responsive" alt=""></div>
 
         </section>
 
@@ -185,7 +184,7 @@
                             <div class="content-events">
                                 <h1><span class="cursive"><b>Eventos</b> </span>sociales</h1>
                                 <div class="divider col-xs-10 col-center"></div>
-                                <div class="info col-xs-6 col-center">
+                                <div class="info col-sm-10 col-md-12 col-lg-8 col-center">
                                     <p>Compartimos nuestra experiencia <br>para garantizar el éxito de tu evento. <br>Contamos con un extraordinario equipo y una sólida infraestructura. Como empresa líder en nuestro mercado atendemos a más de 20,000 personas al año con todos nuestros servicios.</p>
                                 </div>
                             </div>
@@ -195,7 +194,7 @@
                             <div class="content-events">
                                 <h1><span class="cursive"><b>Eventos</b> </span>sociales</h1>
                                 <div class="divider col-xs-10 col-center"></div>
-                                <div class="info col-xs-6 col-center">
+                                <div class="info col-sm-10 col-md-12 col-lg-8 col-center">
                                     <p>Compartimos nuestra experiencia <br>para garantizar el éxito de tu evento. <br>Contamos con un extraordinario equipo y una sólida infraestructura. Como empresa líder en nuestro mercado atendemos a más de 20,000 personas al año con todos nuestros servicios.</p>
                                 </div>
                             </div>
@@ -205,7 +204,7 @@
                             <div class="content-events">
                                 <h1><span class="cursive"><b>Eventos</b> </span>sociales</h1>
                                 <div class="divider col-xs-10 col-center"></div>
-                                <div class="info col-xs-6 col-center">
+                                <div class="info col-sm-10 col-md-12 col-lg-8 col-center">
                                     <p>Compartimos nuestra experiencia <br>para garantizar el éxito de tu evento. <br>Contamos con un extraordinario equipo y una sólida infraestructura. Como empresa líder en nuestro mercado atendemos a más de 20,000 personas al año con todos nuestros servicios.</p>
                                 </div>
                             </div>
@@ -225,12 +224,54 @@
             </div>
 
         </section>
+
+        <section id="contacto">
+
+            <div id="flores" class="col-xs-6 col-sm-4 col-md-2 animated fadeInLeft">
+                <img src="img/flores.png" alt="" class="img-responsive">
+            </div>
+
+            <div id="iphone" class="col-xs-6 col-sm-5 col-md-3 animated fadeIn">
+                <img src="img/iphone.png" alt="" class="img-responsive">
+            </div>
+
+            <div class="wrap animated fadeIn">
+
+                <div class="row">
+
+                    <div id="social" class="col-xs-6 col-sm-4 col-md-2">
+                        
+                        <a href=""><img class="img-responsive" src="img/fb.png" alt=""></a>
+                        <a href=""><img class="img-responsive" src="img/instagram.png" alt=""></a>
+
+                    </div>
+                    
+
+                    <div class="col-xs-8 col-sm-5">
+                        
+                        <p>Ponte en contacto con nosotros y conoce los beneficios de Cantabria</p>
+
+                    </div>
+
+                    <div class="col-xs-10 col-sm-5 col-md-4" id="datos-contacto">
+                        
+                        <p><i class="icon icon-telephone"></i>443 371 21 57</p>
+                        <p><i class="icon icon-mail"></i>contacto@cantabriaeventos.com</p>
+                        <p><i class="icon icon-location"></i>Av. Ventura puente #122</p>
+
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </section>
         
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery-3.2.1.min.js"></script>
+        <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script> -->
         <script src="js/vendor/swiper.js"></script>
-        <!-- <script src="js/vendor/swiper.esm.js"></script> -->
+        <script src="js/vendor/slick.min.js"></script>
         <!-- <script src="js/vendor/swiper.esm.bundle.js"></script> -->
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>

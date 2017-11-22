@@ -1,3 +1,9 @@
+$(window).on('load', function(){
+	$('#logo').addClass('animatelogo');
+	$('#btn-home').addClass('fadeInUp');
+	// alert('load');
+});
+
 $(window).scroll( function(){
 	$('.animated').each( function(i){
 	  var bottom_of_object = $(this).offset().top + ($(this).outerHeight()/2);
@@ -8,3 +14,4 @@ $(window).scroll( function(){
 	  }
 	});
 });
+

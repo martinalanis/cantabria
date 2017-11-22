@@ -37,19 +37,55 @@ $(document).ready(function () {
         }
     });
 
-    var swiperS = new Swiper('#swiper-services', {
-        direction: 'horizontal',
-        slidesPerView: 6,
-        spaceBetween: 60,
-        loop: true,
-        autoplay: {
-            delay: 5000,
-          },
-        //Navigation arrows
-        navigation: {
-          nextEl: '#services-next',
-          prevEl: '#services-prev',
+    $('#swiper-services').slick({
+        infinite: true,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        swipeToSlide: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: true,
+        prevArrow: $('#services-prev'),
+        nextArrow: $('#services-next'),
+        dots: false,
+        responsive: [
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 850,
+            settings: {
+                slidesToShow: 4,
+            }
+        },
+        {
+            breakpoint: 999,
+            settings: {
+                slidesToShow: 5,
+            }
         }
+        ]
+        // direction: 'horizontal',
+        // slidesPerView: 6,
+        // spaceBetween: 60,
+        // loop: true,
+        // autoplay: {
+        //     delay: 5000,
+        //   },
+        // //Navigation arrows
+        // navigation: {
+        //   nextEl: '#services-next',
+        //   prevEl: '#services-prev',
+        // }
     });
 
     var swiperE = new Swiper('#swiper-events', {
@@ -62,6 +98,7 @@ $(document).ready(function () {
         // If we need pagination
         pagination: {
           el: '#pagination-events',
+          clickable: true,
         },
         //Navigation arrows
         navigation: {
