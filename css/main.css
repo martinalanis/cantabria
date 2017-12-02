@@ -231,8 +231,28 @@ section {
     background: #002e2a;
 }
 
+#preloader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 15;
+    background: #F7EEE5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 121px;
+}
+
+#preloader div {
+    transform: scale3d(4,4,4);
+    opacity: .2;
+}
+
 .menu-icon {
-    position: absolute;
+    position: fixed;
     top: 2%;
     left: 2%;
     width: 4%;
@@ -242,6 +262,60 @@ section {
 
 .menu-icon:hover {
     box-shadow: 0 0 5px 2px #F7EEE5;
+}
+
+.menu {
+    position: fixed;
+    top: -1000px;
+    left: 0;
+    width: 100%;
+    z-index: 12;
+    /*padding-bottom: 80px;*/
+    height: 30vh;
+    min-height: 100px;
+    background: -webkit-linear-gradient(top, rgba(247,238,229,0.9) 20%, rgba(247,238,229,0.6) 60%, rgba(247,238,229,0) 100%);
+    background: -o-linear-gradient(top, rgba(247,238,229,0.9) 20%, rgba(247,238,229,0.6) 60%, rgba(247,238,229,0) 100%);
+    background: linear-gradient(to bottom, rgba(247,238,229,0.9) 20%, rgba(247,238,229,0.6) 60%, rgba(247,238,229,0) 100%);
+    transition: all 0.5s;
+}
+
+.menu div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 25px 0;
+    max-width: 900px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.menu a {
+    color: #002e2a;
+    letter-spacing: 3px;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    position: relative;
+}
+
+.menu a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 0;
+    background: rgba(0, 46, 42, 0.8);
+    transition: all 0.3s;
+}
+
+.menu a:hover::before {
+    height: 2px;
+}
+
+.menu.visible {
+    top: 0;
 }
 
 /**paddings**/
@@ -385,23 +459,23 @@ div.content-events {
     }
 
     #logo {
-        opacity: 0;        
+        opacity: 0.2;        
         transform: scale3d(4.5,4.5,4.5);
     }
 
     .animatelogo {
-        -webkit-animation: logo 0.6s ease-in-out 0.6s forwards;
-        -o-animation: logo 0.6s ease-in-out 0.6s forwards;
-        animation: logo 0.6s ease-in-out 0.6s forwards;
+        -webkit-animation: logo 0.8s ease-in-out  forwards;
+        -o-animation: logo 0.8s ease-in-out  forwards;
+        animation: logo 0.8s ease-in-out  forwards;
     }
 
     @keyframes logo {
 
-        90% {
-            opacity: 0.2;
+        /*90% {
+            opacity: 0.4;
         }
-
-        100% {
+*/
+        to {
             opacity: 1;
             transform: scale3d(1,1,1);
         }
@@ -486,24 +560,24 @@ div.content-events {
         left: 10%;       
     }
 
-#comida {
+#menu {
     padding: 50px 0;
     background: #F7EEE5;
     position: relative;
 }
 
-    #comida .row {
+    #menu .row {
         display: flex;
         align-items: center;
     }
 
-    div#comida-text {
+    div#menu-text {
         display: flex;
         flex-flow: column wrap;
         align-items: center;
     }
 
-    #comida a {
+    #menu a {
         padding: 15px 25px; 
         background: #e8b588;
         border: none;
@@ -514,7 +588,7 @@ div.content-events {
         transition: all 0.2s ease-in-out;
     }
 
-    #comida a:hover {
+    #menu a:hover {
         background: #002e2a;
         transform: translateY(-5px);
         /*transform: scale3d(1.1,1.1,1.1);*/
@@ -700,25 +774,25 @@ div.content-events {
         opacity: 0.3;
     }*/
 
-    #comida {
+    #menu {
         overflow-y: visible;
     }
 
-    #comida .row {
+    #menu .row {
         flex-direction: column;
     }
 
-    #comida .col-xs-10 {
+    #menu .col-xs-10 {
         z-index: 1;
         margin-bottom: 25%;
     }
 
-    #comida .col-xs-8 {
+    #menu .col-xs-8 {
         position: absolute;
         top: 23%;
     }
 
-    #comida .col-xs-8 img {
+    #menu .col-xs-8 img {
         opacity: 0.6;
     }
     
