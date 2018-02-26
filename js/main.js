@@ -30,11 +30,18 @@ $(".menu-icon").click(function(e){
 	$("nav.menu").addClass('visible');
 });
 
-$('.menu a').on('click', function(event) {
+$('.menu a, #btn-home').on('click', function(event) {
+    
     event.preventDefault();
-    var $anchor = $(this);
+    // alert(window.innerWidth);
+    var $href = $(this).attr('href');
+
+    if(window.innerWidth < 767) {
+    	$href = "#galeria";
+    }
+
     $('html, body').stop().animate({
-      scrollTop: $($anchor.attr('href')).offset().top
+      scrollTop: $($href).offset().top
     }, 1000);
     $("nav.menu").removeClass('visible');
   });

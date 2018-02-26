@@ -23,7 +23,7 @@
 
 
 $(document).ready(function () {
-    var swiperG = new Swiper('#swiper-gallery', {
+    var swiperG = new Swiper('#gallery-photos', {
         direction: 'horizontal',
         // effect: 'fade',
         loop: true,
