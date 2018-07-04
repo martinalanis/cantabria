@@ -3,46 +3,23 @@ $(window).on('load', function(){
 	$('#logo').addClass('animatelogo');
 	$('#btn-home').addClass('fadeInUp');
 	// alert('load');
-});
 
-$(window).scroll( function(){
-	$('.animated').each( function(i){
-	  var bottom_of_object = $(this).offset().top + ($(this).outerHeight()/2);
-	  var bottom_of_window = $(window).scrollTop() + $(window).height();
+	var i = 0;
+	var txt = 'ANTABRIA'; /* The text */
 
-	  if( bottom_of_window > bottom_of_object ){
-
-	  	switch($(this).attr('id')) {
-	  		case 'comida-plato': 
-	  		case 'servicios-wrap': $(this).addClass(" animated fadeInUp");break;
-	  		case 'comida-text': $(this).addClass(" animated fadeInDown");break;
-	  		case 'flores': $(this).addClass(" animated fadeInLeft");break;
-	  		case 'iphone': setTimeout( function(){$('#iphone').addClass(" animated fadeIn");}, 500);break;
-	  		default: $(this).addClass(" animated fadeIn");break;
-	  	}
-
+	function typeWriter() {
+	  if (i < txt.length) {
+	    document.getElementById("logo-text").innerHTML += txt.charAt(i);
+	    i++;
+	    setTimeout(typeWriter, 150);
 	  }
-	});
+	}
+
+	setTimeout(typeWriter, 800);
+	
 });
 
-$(".menu-icon").click(function(e){
+$("#btn-home").click(function(e){
 	e.preventDefault();
-	$("nav.menu").addClass('visible');
+	goTo($(this).attr('href'));
 });
-
-$('.menu a, #btn-home').on('click', function(event) {
-    
-    event.preventDefault();
-    // alert(window.innerWidth);
-    var $href = $(this).attr('href');
-
-    if(window.innerWidth < 767) {
-    	$href = "#galeria";
-    }
-
-    $('html, body').stop().animate({
-      scrollTop: $($href).offset().top
-    }, 1000);
-    $("nav.menu").removeClass('visible');
-  });
-
