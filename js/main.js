@@ -23,3 +23,32 @@ $("#btn-home").click(function(e){
 	e.preventDefault();
 	goTo($(this).attr('href'));
 });
+
+$('.slide-toggle-modal-service').click(function(){
+
+	var $title = $(this).data('title');
+    var $info = $(this).data('info');
+    var $icon = $(this).data('icon');
+
+    if( $icon.startsWith('fa') ){
+        $('#icon-modal').addClass($icon);                  
+    }else{
+        $('#img-modal-service').attr('src', $icon);
+        $('#icon-modal-container').addClass('plr-7');
+    }
+
+    $('#title-modal-service').html($title);
+    $('#info-modal-service').html($info);
+
+    $('#modal-services').modal();
+ 
+
+});
+
+$('#modal-services').on('hidden.bs.modal', function (e) {
+    $('#title-modal-service').html('');
+    $('#info-modal-service').html('');
+    $('#icon-modal').attr('class', '');
+    $('#img-modal-service').attr('src', '');
+    $('#icon-modal-container').removeClass('plr-7');
+});

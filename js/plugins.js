@@ -96,14 +96,9 @@ $(document).ready(function () {
         fixed.style.transition = '';
     });
 
-
     new WOW().init();
 
-    $("#menu-plato").lightGallery({
-        mode: 'lg-fade'
-    });
-
-    $("#galeria").lightGallery({
+    $("#galeria, .gallery-salones, .gallery-service").lightGallery({
         mode: 'lg-fade',
         selector: 'a'
     });
@@ -229,43 +224,294 @@ $(document).ready(function () {
             }
         }
         ]
-        // direction: 'horizontal',
-        // slidesPerView: 6,
-        // spaceBetween: 60,
-        // loop: true,
-        // autoplay: {
-        //     delay: 5000,
-        //   },
-        // //Navigation arrows
-        // navigation: {
-        //   nextEl: '#services-next',
-        //   prevEl: '#services-prev',
-        // }
     });
 
-    var swiperE = new Swiper('#swiper-events', {
-        direction: 'horizontal',
-        // effect: 'fade',
-        loop: true,
-        autoplay: {
-            delay: 5000,
-          },
-        // If we need pagination
-        pagination: {
-          el: '#pagination-events',
-          clickable: true,
+    $('#gallery-santillan').slick({
+        lazyLoad: 'ondemand',
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        swipeToSlide: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: true,
+        prevArrow: $('#santillan-prev'),
+        nextArrow: $('#santillan-next'),
+        dots: false,
+        responsive: [
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 2,
+            }
         },
-        //Navigation arrows
-        navigation: {
-          nextEl: '#events-next',
-          prevEl: '#events-prev',
-        }
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 1,
+            }
+        }]
     });
 
-    $('.counter').counterUp({
-        delay: 10,
-        time: 1500
+    $('#gallery-solares').slick({
+        lazyLoad: 'ondemand',
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        swipeToSlide: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: true,
+        prevArrow: $('#solares-prev'),
+        nextArrow: $('#solares-next'),
+        dots: false,
+        responsive: [
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 1,
+            }
+        }]
     });
+
+    $('#gallery-ejecutivo').slick({
+        lazyLoad: 'ondemand',
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        swipeToSlide: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: true,
+        prevArrow: $('#ejecutivo-prev'),
+        nextArrow: $('#ejecutivo-next'),
+        dots: false,
+        responsive: [
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 1,
+            }
+        }]
+    });
+
+    $('#gallery-villacarriedo').slick({
+        lazyLoad: 'ondemand',
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        swipeToSlide: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: true,
+        prevArrow: $('#villacarriedo-prev'),
+        nextArrow: $('#villacarriedo-next'),
+        dots: false,
+        responsive: [
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 1,
+            }
+        }]
+    });
+
+    $('#gallery-ayv').slick({
+        lazyLoad: 'ondemand',
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        swipeToSlide: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: true,
+        prevArrow: $('#ayv-prev'),
+        nextArrow: $('#ayv-next'),
+        dots: false,
+        responsive: [
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 1,
+            }
+        }]
+    });
+
+    $('#gallery-catering').slick({
+        lazyLoad: 'ondemand',
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        swipeToSlide: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: true,
+        prevArrow: $('#catering-prev'),
+        nextArrow: $('#catering-next'),
+        dots: false,
+        responsive: [
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 1,
+            }
+        }]
+    });
+
+    $('#gallery-cyb').slick({
+        lazyLoad: 'ondemand',
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        swipeToSlide: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: true,
+        prevArrow: $('#cyb-prev'),
+        nextArrow: $('#cyb-next'),
+        dots: false,
+        responsive: [
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 1,
+            }
+        }]
+    });
+
+    $('#gallery-decoracion').slick({
+        lazyLoad: 'ondemand',
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        swipeToSlide: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: true,
+        prevArrow: $('#decoracion-prev'),
+        nextArrow: $('#decoracion-next'),
+        dots: false,
+        responsive: [
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 1,
+            }
+        }]
+    });
+
+    $('#gallery-fyv').slick({
+        lazyLoad: 'ondemand',
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        swipeToSlide: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: true,
+        prevArrow: $('#fyv-prev'),
+        nextArrow: $('#fyv-next'),
+        dots: false,
+        responsive: [
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 1,
+            }
+        }]
+    });
+
+    $('#gallery-mesa').slick({
+        lazyLoad: 'ondemand',
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        swipeToSlide: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: true,
+        prevArrow: $('#mesa-prev'),
+        nextArrow: $('#mesa-next'),
+        dots: false,
+        responsive: [
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 1,
+            }
+        }]
+    });
+
+    $('#gallery-pastel').slick({
+        lazyLoad: 'ondemand',
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        swipeToSlide: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: true,
+        prevArrow: $('#pastel-prev'),
+        nextArrow: $('#pastel-next'),
+        dots: false,
+        responsive: [
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 2,
+            }
+        }]
+    });
+
+    $('#gallery-pista').slick({
+        lazyLoad: 'ondemand',
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        swipeToSlide: true,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: true,
+        prevArrow: $('#pastel-prev'),
+        nextArrow: $('#pastel-next'),
+        dots: false,
+        responsive: [
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 1,
+            }
+        }]
+    });
+
+    // $('.counter').counterUp({
+    //     delay: 10,
+    //     time: 1500
+    // });
 
 });
 // Place any jQuery/helper plugins in here.
